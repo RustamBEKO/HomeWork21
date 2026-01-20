@@ -46,7 +46,7 @@ export class BoardsService {
     }
     return board;
   }
-  delete(id: number) {
+  remove(id: number) {
     const index = this.boards.findIndex((board) => board.id === id);
     if (index === -1) {
       throw new NotFoundException('Board not found');

@@ -25,8 +25,8 @@ update(@Param('id') id: string, @Body() dto: UpdateBoardDto) {
   return this.boardsService.update(Number(id), dto);
 }
 @Delete(':id')
-delete(@Param('id') id: string) {
-  return this.boardsService.delete(Number(id));
+remove(@Param('id') id: string) {
+  return this.boardsService.remove(Number(id));
   // Implementation for deleting a board goes here  
 }
 }
